@@ -1,0 +1,28 @@
+.flex {
+    display: flex;
+    background-color: yellow;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido1 {
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid red;
+}
+
+.contenido2 {
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid red;
+}
+
+.contenido3 {
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid red;
+}

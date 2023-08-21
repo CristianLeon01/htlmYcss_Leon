@@ -1,0 +1,27 @@
+.contenedor-hidden {
+    background-color: rgb(0, 255, 225);
+    width: 300px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.contenedor-scroll {
+    background-color: rgb(0, 255, 225);
+    width: 300px;
+    height: 110px;
+    overflow: scroll;
+}
+
+.contenedor-visible {
+    background-color: rgb(0, 255, 225);
+    width: 300px;
+    height: 110px;
+    overflow: visible;
+}
+
+.contenedor-auto {
+    background-color: rgb(0, 255, 225);
+    width: 300px;
+    height: 110px;
+    overflow: auto;
+}

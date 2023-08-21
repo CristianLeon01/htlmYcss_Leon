@@ -1,0 +1,20 @@
+.div_1, .div_2 {
+    color: blueviolet;
+    background-color: burlywood;
+}
+
+.imagen {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.span1 {
+    background-color: cadetblue;
+    float: right;
+}
+
+.span2 {
+    background-color: cadetblue;
+    float: left;
+}
