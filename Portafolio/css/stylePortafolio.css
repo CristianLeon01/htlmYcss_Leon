@@ -44,17 +44,62 @@ nav a:hover{
     src: url(../fuentes/Dreaming.otf);
 }
 
+.Inicio{
+    height: 800px;
+}
+
 .titulo{
     text-align: center;
-    padding: 70px;
+    padding: 25px;
     font-family: fuenteTitulo;
     font-size: 50px;
+}
+
+.position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -69%);
+}
+
+.slider{
+    background-image: url(../img/IMG1Slider.jpg);
+    background-size: cover;
+    height: 35%;
+    width: 35%;
+    border-radius: 20px;
+    animation: animate 7s infinite;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+}
+
+@media (max-width: 768px) {
+    .slider {
+        width: 90%; 
+    }
+}
+
+@keyframes animate{
+    40%{
+        background-image: url(../img/IMG1Slider.jpg);
+        background-size: cover;
+    }
+
+    70%{
+        background-image: url(../img/IMG2Slider.jpg);
+        background-size: cover;
+    }
+
+    90%{
+        background-image: url(../img/IMG3Slider.jpg);
+        background-size: cover;
+    }
 }
 
 .contenedorParrafo {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    transform: translate(0%, 172%);
 }
 
 .parrafo{
@@ -62,4 +107,149 @@ nav a:hover{
     line-height: 1.5;
     font-size: 19px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    position: relative;
+}
+
+.titulo-Sobre-Mi{
+    text-align: center;
+    padding: 0;
+    font-family: fuenteTitulo;
+    font-size: 40px;
+}
+
+.Sobre-Mi {
+    background-color: #f5f5f5;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedorSobreMi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parrafoSobreMi {
+    flex: 1;
+    padding: 9px;
+    text-align:justify;
+    line-height: 1.5;
+    font-size: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imagenSobreMi {
+    flex: 1;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.imagenSobreMi img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Mis-Proyectos {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-Mis-Proyectos{
+    text-align: center;
+    padding: 0;
+    font-family: fuenteTitulo;
+    font-size: 40px;
+}
+
+.tarjetas{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.tarjetas .parte1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.tarjetas .delantera{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.tarjetas .delantera img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjetas .delantera h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.tarjetas .trasera{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color:#f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+}
+
+.tarjetas .trasera .link-1erTarjeta{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.tarjetas .trasera .link-1erTarjeta a{
+    color: #f3f3f3;
+}
+
+.tarjetas .trasera h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.tarjetas .trasera p{
+    letter-spacing: 1px;
+}
+
+.tarjetas:hover .delantera{
+    transform: perspective(600px) rotateY(180deg);
+    
+}
+
+.tarjetas:hover .trasera{
+    transform: perspective(600px) rotateY(360deg);
 }
