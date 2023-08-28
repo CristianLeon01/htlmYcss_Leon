@@ -154,7 +154,7 @@ nav a:hover{
 }
 
 .imagenSobreMi img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
 }
 
@@ -173,83 +173,51 @@ nav a:hover{
     font-size: 40px;
 }
 
-.tarjetas{
+
+.card {
     position: relative;
     width: 300px;
-    height: 350px;
-    margin: 20px;
+    height: 400px;
+    margin-top: 20px; 
 }
 
-.tarjetas .parte1{
+.face{
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
     overflow: hidden;
-    transition: .5s;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    transition: 1s;
 }
 
-.tarjetas .delantera{
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000;
-}
-
-.tarjetas .delantera img{
-    position: absolute;
+img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
-.tarjetas .delantera h3{
+.front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 8px 10px #000;
+}
+
+.back{
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    background: rgba(0, 0, 0, .4);
-    text-align: center;
-}
-
-.tarjetas .trasera{
     transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
+    background-color: tomato;
+    color: #fff;
     padding: 15px;
-    color:#f3f3f3;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
-    box-shadow: 0 5px 10px black;
+    box-shadow: 0px 8px 10px #000;
 }
 
-.tarjetas .trasera .link-1erTarjeta{
-    border-top: solid 1px #f3f3f3;
-    height: 50px;
-    line-height: 50px;
-}
-
-.tarjetas .trasera .link-1erTarjeta a{
-    color: #f3f3f3;
-}
-
-.tarjetas .trasera h3{
-    font-size: 30px;
-    margin-top: 20px;
-    letter-spacing: 2px;
-}
-
-.tarjetas .trasera p{
-    letter-spacing: 1px;
-}
-
-.tarjetas:hover .delantera{
+.card:hover .front{
     transform: perspective(600px) rotateY(180deg);
-    
 }
 
-.tarjetas:hover .trasera{
+.card:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
