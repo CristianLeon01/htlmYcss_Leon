@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    background: lightblue;
+    border: 15px solid blue;
+    box-sizing: border-box;
+    position:relative;
+
+  }
+
+.seccion1{
+    width: 150px;
+    height: 150px;
+    background: rgb(255, 0, 0);
+    margin: 10px;
+
+  }
+
+  .seccion2{
+    width: 150px;
+    height: 150px;
+    background: rgb(255, 0, 0);
+    margin: 10px;
+
+  }
+
+  .seccion3{
+    width: 150px;
+    height: 150px;
+    background: rgba(246, 0, 0, 0.977);
+    margin: 10px;
+  }
+
+  .seccion4{
+    width: 150px;
+    height: 150px;
+    background: rgb(255, 0, 0);
+    margin: 10px;
+  }
+
+  .seccion5{
+    width: 150px;
+    height: 150px;
+    background: rgb(255, 119, 0);
+    margin: 10px;
+  }
+
+  .seccion6{
+    width: 150px;
+    height: 150px;
+    background: green;
+    margin: 10px;
+  }
+
+  .seccion7{
+    width: 150px;
+    height: 150px;
+    background: green;
+    margin: 10px;
+
+  }
+
+  .seccion8{
+    width: 150px;
+    height: 150px;
+    background: green;
+    margin: 10px;
+  }
+
+  .seccion9{
+    width: 150px;
+    background: green;
+    height: 150px;
+    margin: 10px;
+  }
+
+
+
